@@ -11,8 +11,7 @@ buildGoApplication {
   pwd = ./.;
   src = ./.;
 
-  go = pkgs.go;
-  env.GOTOOLCHAIN = "local";
+  go = pkgs.go_1_26;
 
   postBuild = ''
     rm $GOPATH/bin/generate
